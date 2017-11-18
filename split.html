@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Split.js</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/github.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+</head>
+<body>
+
+<div class="row">
+
+<div class="col-4 menu">
+<ul>
+<li><a href="#1">Year-1 </a></li>
+<li><a href="#2">Year-2 </a></li>
+<li><a href="#3">Year-3 </a></li>
+<li><a href="#4">Year-4 </a></li>
+</ul>
+</div>
+
+<div class="col-7">
+<h3>The BEng (Hons) SE from IIT</h3>
+<p>This course embodies the best ways to design, maintain, build and evaluate software systems. It makes use of many of the technical aspects of computer science especially programming and aims to develop the professional attitudes, interpersonal and technical skills you will need in the software engineering industry.</p>
+<p>The course also provides a solid foundation in software engineering theory and practice to develop professional software systems.</p>
+<h2><a id="1">Year-1</a></h2>
+<p>Level 4 is the base level that everyone should follow all the modules and there are no optional modules in this level.
+The modules are Communication Skills, Computer Systems Fundamentals, Software Development Principles-1 and 2, Information Systems, Mathematics for Computing and Web Technology.</p>
+<h2>The Sandwich Degree program</h2>
+</div>
+
+<div class="outerBox">
+<div class="innerBox">
+<h2><a id="2">Year-2</a></h2>
+<h3>Modules for Level-5</h3>
+Semester 1
+
+<ul>
+<li>Professional practice</li>
+<li>Object-Oriented Programming-1</li>
+<li>Software Development Group Project</li>
+</ul>
+<div class="btn">
+			<div class="btn-back">
+			<ul>
+				<li>Advanced Client-Side Web Development</li>
+				<li>Network Software Development</li>
+				</ul>
+				<button class="yes">OK</button>				
+			</div>
+			<div class="btn-front">Optionals</div>
+		</div>
+
+		<p class="description">You'll choose one module from the options!</p>
+		Semester 2
+		<ul>
+		<li>Object-Oriented Programming-2</li>
+		<li>Algorithms and Complexity</li>
+		</ul>
+		<fieldset id="fieldset2" class="coolfieldset">
+		<legend>Optionals</legend>
+
+		<div>
+			<ul>
+				<li>Advanced Server-Side Web Development</li>
+				<li>Mobile Application Development</li>
+				</ul>
+				<p>You'll choose one module from the options!
+				</p>
+<pre>
+***
+</pre>
+		</div>
+	</fieldset>
+	<script>		
+		$('#fieldset2').coolfieldset({collapsed:true});		
+	</script>
+
+	
+</div>
+</div>
+
+<div class="outerBox">
+<div class="innerBox">
+<h2><a id="3">Year-3</a></h2>
+<h3>Industrial Placement</h3>
+<p>IIT paves the way to place you in the industry!</p>
+<div class="slideshow">
+		<img src="images/sharanya.jpg" alt="interns" width="440" height="400" />
+		<img src="images/kripa.jpg" alt="interns" width="440" height="400" />
+		<img src="images/award.jpg" alt="interns" width="440" height="400" />
+		<img src="images/exhibition.PNG" alt="interns" width="440" height="400" />
+		<img src="images/achievement.jpg" alt="interns" width="440" height="400" />
+		<img src="images/ceremony.jpg" alt="interns" width="440" height="400" />
+		<img src="images/kasun.jpeg" alt="interns" width="440" height="400" />
+	</div>
+</div>
+</div>
+
+<div class="outerBox">
+<div class="innerBox">
+<h2><a id="4">Year-4</a></h2>
+<h3>Modules for Level-6</h3>
+<ul>
+<li>Computer Science and Software Engineering Project</li>
+<li>Security and Forensics</li>
+<li>Formal Specification</li>
+</ul>
+<fieldset id="fieldset4" class="coolfieldset">
+		<legend>Optionals</legend>
+
+		<div>
+			<ul>
+			<li>Web Intelligence</li>
+			<li>Native Programming</li>		
+			<li>Web Analytics and Marketing</li>
+			<li>Real-time and Embedded Systems</li>			
+			</ul>
+				<p>You'll choose two modules!</p>				
+<pre>
+***
+</pre>
+		</div>
+	</fieldset>
+	<script>		
+	$('#fieldset4').coolfieldset({speed:"fast"});	
+	</script>
+	<p>The level 6 modules are more specialised fields and there is final year project also to complete the degree program.</p>
+</div>
+</div>
+
+</div>
+
+
+</body>
+<script>hljs.initHighlightingOnLoad();</script>
+<script src="http://nathancahill.github.io/Split.js/split.js"></script>
+<script>
+    Split(['#one', '#two'], {
+        sizes: [29, 71],
+        minSize: 200
+    });
+
+    Split(['#three', '#four'], {
+        sizes: [25, 75],
+        minSize: 200
+    });
+
+    Split(['#five', '#six', '#seven'], {
+        minSize: [100, 100, 300]
+    });
+
+    Split(['#eight', '#nine'], {
+        direction: 'vertical'
+    });
+
+    Split(['#ten', '#eleven']);
+
+    Split(['.outerBox'], {
+        direction: 'vertical'
+    });
+</script>
+</html>
+
